@@ -22,7 +22,7 @@ namespace LibrarySystem
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
-            materialSkinManager.ColorScheme = new ColorScheme(Primary.DeepOrange800, Primary.DeepOrange900, Primary.Red500, Accent.DeepOrange200, TextShade.WHITE);
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.Orange800, Primary.Orange900, Primary.Red500, Accent.Orange200, TextShade.WHITE);
 
         }
 

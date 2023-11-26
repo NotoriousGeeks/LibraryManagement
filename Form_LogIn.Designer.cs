@@ -41,18 +41,22 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.close_Btn = new System.Windows.Forms.Button();
             this.logInErrorMessage_Label = new System.Windows.Forms.Label();
+            this.showPassword_Pb = new System.Windows.Forms.PictureBox();
+            this.hidePassword_Pb = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.showPassword_Pb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hidePassword_Pb)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-128, -101);
+            this.pictureBox1.Location = new System.Drawing.Point(-128, -100);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(795, 632);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -62,7 +66,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(136, 53);
+            this.pictureBox2.Location = new System.Drawing.Point(137, 53);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(98, 78);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -74,7 +78,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(105, 145);
+            this.label1.Location = new System.Drawing.Point(107, 145);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(167, 21);
             this.label1.TabIndex = 3;
@@ -112,7 +116,7 @@
             this.login_Btn.ForeColor = System.Drawing.Color.White;
             this.login_Btn.HighEmphasis = true;
             this.login_Btn.Icon = null;
-            this.login_Btn.Location = new System.Drawing.Point(152, 329);
+            this.login_Btn.Location = new System.Drawing.Point(156, 329);
             this.login_Btn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.login_Btn.MouseState = MaterialSkin.MouseState.HOVER;
             this.login_Btn.Name = "login_Btn";
@@ -198,11 +202,36 @@
             this.logInErrorMessage_Label.Text = "Invalid username/ password! Please try again.";
             this.logInErrorMessage_Label.Visible = false;
             // 
+            // showPassword_Pb
+            // 
+            this.showPassword_Pb.Image = ((System.Drawing.Image)(resources.GetObject("showPassword_Pb.Image")));
+            this.showPassword_Pb.Location = new System.Drawing.Point(310, 278);
+            this.showPassword_Pb.Name = "showPassword_Pb";
+            this.showPassword_Pb.Size = new System.Drawing.Size(25, 25);
+            this.showPassword_Pb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.showPassword_Pb.TabIndex = 14;
+            this.showPassword_Pb.TabStop = false;
+            this.showPassword_Pb.Click += new System.EventHandler(this.showPassword_Pb_Click);
+            // 
+            // hidePassword_Pb
+            // 
+            this.hidePassword_Pb.Image = ((System.Drawing.Image)(resources.GetObject("hidePassword_Pb.Image")));
+            this.hidePassword_Pb.Location = new System.Drawing.Point(310, 278);
+            this.hidePassword_Pb.Name = "hidePassword_Pb";
+            this.hidePassword_Pb.Size = new System.Drawing.Size(25, 25);
+            this.hidePassword_Pb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.hidePassword_Pb.TabIndex = 15;
+            this.hidePassword_Pb.TabStop = false;
+            this.hidePassword_Pb.Visible = false;
+            this.hidePassword_Pb.Click += new System.EventHandler(this.hidePassword_Pb_Click);
+            // 
             // Form_LogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(667, 418);
+            this.Controls.Add(this.hidePassword_Pb);
+            this.Controls.Add(this.showPassword_Pb);
             this.Controls.Add(this.logInErrorMessage_Label);
             this.Controls.Add(this.close_Btn);
             this.Controls.Add(this.pictureBox6);
@@ -225,6 +254,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.showPassword_Pb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hidePassword_Pb)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -244,5 +275,7 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Button close_Btn;
         private System.Windows.Forms.Label logInErrorMessage_Label;
+        private System.Windows.Forms.PictureBox showPassword_Pb;
+        private System.Windows.Forms.PictureBox hidePassword_Pb;
     }
 }

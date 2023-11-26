@@ -49,5 +49,19 @@ namespace LibrarySystem
         {
             Application.Exit();
         }
+
+        private void showPassword_Pb_Click(object sender, EventArgs e)
+        {
+            password_Tb.UseSystemPasswordChar = !password_Tb.UseSystemPasswordChar;
+            showPassword_Pb.Visible = false;
+            hidePassword_Pb.Visible = true;
+        }
+
+        private void hidePassword_Pb_Click(object sender, EventArgs e)
+        {
+            password_Tb.UseSystemPasswordChar = !password_Tb.UseSystemPasswordChar;
+            hidePassword_Pb.Visible = false;
+            showPassword_Pb.Visible = true;
+        }
     }
 }
