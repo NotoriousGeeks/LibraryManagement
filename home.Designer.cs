@@ -38,8 +38,10 @@
             this.bookList_Tab = new System.Windows.Forms.TabPage();
             this.dashboard_Tab = new System.Windows.Forms.TabPage();
             this.home_MaterialTabControl = new MaterialSkin.Controls.MaterialTabControl();
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.logout_Tab = new System.Windows.Forms.TabPage();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.borrowerList_Tab.SuspendLayout();
             this.bookList_Tab.SuspendLayout();
             this.home_MaterialTabControl.SuspendLayout();
             this.SuspendLayout();
@@ -66,6 +68,7 @@
             this.imageList1.Images.SetKeyName(15, "book5.png");
             this.imageList1.Images.SetKeyName(16, "book6.png");
             this.imageList1.Images.SetKeyName(17, "logout.png");
+            this.imageList1.Images.SetKeyName(18, "home.png");
             // 
             // bookReservation_Tab
             // 
@@ -99,18 +102,20 @@
             // 
             // borrowerList_Tab
             // 
+            this.borrowerList_Tab.BackColor = System.Drawing.Color.White;
+            this.borrowerList_Tab.Controls.Add(this.materialLabel1);
             this.borrowerList_Tab.ImageKey = "borrower1.png";
             this.borrowerList_Tab.Location = new System.Drawing.Point(4, 26);
             this.borrowerList_Tab.Name = "borrowerList_Tab";
             this.borrowerList_Tab.Size = new System.Drawing.Size(910, 523);
             this.borrowerList_Tab.TabIndex = 2;
             this.borrowerList_Tab.Text = "Borrower List";
-            this.borrowerList_Tab.UseVisualStyleBackColor = true;
             // 
             // bookList_Tab
             // 
-            this.bookList_Tab.Controls.Add(this.materialLabel1);
-            this.bookList_Tab.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bookList_Tab.BackColor = System.Drawing.Color.White;
+            this.bookList_Tab.Controls.Add(this.materialLabel2);
+            this.bookList_Tab.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bookList_Tab.ImageKey = "books.png";
             this.bookList_Tab.Location = new System.Drawing.Point(4, 26);
             this.bookList_Tab.Name = "bookList_Tab";
@@ -118,19 +123,18 @@
             this.bookList_Tab.Size = new System.Drawing.Size(910, 523);
             this.bookList_Tab.TabIndex = 1;
             this.bookList_Tab.Text = "Book List";
-            this.bookList_Tab.UseVisualStyleBackColor = true;
             // 
             // dashboard_Tab
             // 
+            this.dashboard_Tab.BackColor = System.Drawing.Color.White;
             this.dashboard_Tab.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dashboard_Tab.ImageKey = "dashboard1.png";
+            this.dashboard_Tab.ImageKey = "home.png";
             this.dashboard_Tab.Location = new System.Drawing.Point(4, 26);
             this.dashboard_Tab.Name = "dashboard_Tab";
             this.dashboard_Tab.Padding = new System.Windows.Forms.Padding(3);
             this.dashboard_Tab.Size = new System.Drawing.Size(910, 523);
             this.dashboard_Tab.TabIndex = 0;
             this.dashboard_Tab.Text = "Dashboard";
-            this.dashboard_Tab.UseVisualStyleBackColor = true;
             // 
             // home_MaterialTabControl
             // 
@@ -154,20 +158,6 @@
             this.home_MaterialTabControl.TabIndex = 0;
             this.home_MaterialTabControl.SelectedIndexChanged += new System.EventHandler(this.home_MaterialTabControl_SelectedIndexChanged);
             // 
-            // materialLabel1
-            // 
-            this.materialLabel1.AutoSize = true;
-            this.materialLabel1.BackColor = System.Drawing.Color.White;
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.materialLabel1.ForeColor = System.Drawing.Color.White;
-            this.materialLabel1.Location = new System.Drawing.Point(39, 32);
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(67, 19);
-            this.materialLabel1.TabIndex = 0;
-            this.materialLabel1.Text = "Book List";
-            // 
             // logout_Tab
             // 
             this.logout_Tab.ImageKey = "logout.png";
@@ -177,6 +167,30 @@
             this.logout_Tab.TabIndex = 6;
             this.logout_Tab.Text = "Log Out";
             this.logout_Tab.UseVisualStyleBackColor = true;
+            // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.materialLabel1.Location = new System.Drawing.Point(29, 20);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(67, 19);
+            this.materialLabel1.TabIndex = 0;
+            this.materialLabel1.Text = "Book List";
+            // 
+            // materialLabel2
+            // 
+            this.materialLabel2.AutoSize = true;
+            this.materialLabel2.Depth = 0;
+            this.materialLabel2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.materialLabel2.Location = new System.Drawing.Point(28, 26);
+            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel2.Name = "materialLabel2";
+            this.materialLabel2.Size = new System.Drawing.Size(67, 19);
+            this.materialLabel2.TabIndex = 1;
+            this.materialLabel2.Text = "Book List";
             // 
             // home
             // 
@@ -190,6 +204,8 @@
             this.Name = "home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MEINKRAFTERS Library Management System";
+            this.borrowerList_Tab.ResumeLayout(false);
+            this.borrowerList_Tab.PerformLayout();
             this.bookList_Tab.ResumeLayout(false);
             this.bookList_Tab.PerformLayout();
             this.home_MaterialTabControl.ResumeLayout(false);
@@ -206,8 +222,9 @@
         private System.Windows.Forms.TabPage bookList_Tab;
         private System.Windows.Forms.TabPage dashboard_Tab;
         private MaterialSkin.Controls.MaterialTabControl home_MaterialTabControl;
-        private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private System.Windows.Forms.TabPage logout_Tab;
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private MaterialSkin.Controls.MaterialLabel materialLabel2;
     }
 }
 
