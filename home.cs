@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MaterialSkin.Controls;
 using System.Diagnostics;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace LibrarySystem
 {
@@ -23,7 +24,6 @@ namespace LibrarySystem
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.Orange800, Primary.Orange900, Primary.Red500, Accent.Orange200, TextShade.WHITE);
-
         }
 
         private void home_MaterialTabControl_SelectedIndexChanged(object sender, EventArgs e)
@@ -39,10 +39,6 @@ namespace LibrarySystem
             h.Show();
             this.Hide();
         }
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
         private void displayBook(string name, string filePath)
         {
             BooksDisplay disp = new BooksDisplay(name, filePath);
@@ -50,11 +46,6 @@ namespace LibrarySystem
         }
 
         private void bookList_Tab_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void materialLabel3_Click(object sender, EventArgs e)
         {
 
         }
@@ -94,5 +85,10 @@ namespace LibrarySystem
         {
             displayBook(Computer_Fundamentals.Text, Computer_Fundamentals.Text);
         }
+        private void home_Load(object sender, EventArgs e)
+        {
+            
+        }
+
     }
 }

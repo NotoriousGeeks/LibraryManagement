@@ -99,7 +99,16 @@ namespace LibrarySystem.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
+
+        internal static System.Drawing.Bitmap Dracula
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("picture_Dracula", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
@@ -108,6 +117,8 @@ namespace LibrarySystem.Properties {
                 object obj = ResourceManager.GetObject("Python Unit Test Automation", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
+
+
         }
     }
 }
