@@ -27,9 +27,17 @@ namespace LibrarySystem
 
         private void home_MaterialTabControl_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if(home_MaterialTabControl.SelectedTab == logout_Tab) 
+            {
+                logout();
+            }
         }
-
+        private void logout()
+        {
+            Form_LogIn h = new Form_LogIn();
+            h.Show();
+            this.Hide();
+        }
         private void label2_Click(object sender, EventArgs e)
         {
 
