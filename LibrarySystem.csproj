@@ -54,6 +54,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BooksDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BooksDisplay.Designer.cs">
+      <DependentUpon>BooksDisplay.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_LogIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BooksDisplay.resx">
+      <DependentUpon>BooksDisplay.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_LogIn.resx">
       <DependentUpon>Form_LogIn.cs</DependentUpon>
     </EmbeddedResource>

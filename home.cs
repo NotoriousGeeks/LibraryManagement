@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MaterialSkin.Controls;
+using System.Diagnostics;
 
 namespace LibrarySystem
 {
@@ -41,6 +42,57 @@ namespace LibrarySystem
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+        private void displayBook(string name, string filePath)
+        {
+            BooksDisplay disp = new BooksDisplay(name, filePath);
+            disp.Show();
+        }
+
+        private void bookList_Tab_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialLabel3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            displayBook(Deep_Learning_and_Computer_Vision.Text, Deep_Learning_and_Computer_Vision.Text);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            displayBook(Computer_Forensics.Text, Computer_Forensics.Name);
+            
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            displayBook(Python_Unit_Test_Automation.Text, Python_Unit_Test_Automation.Text);
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            displayBook(Computer_Storage_Fundamentals.Text, Computer_Storage_Fundamentals.Text);
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            displayBook(Computer_Fundamentals.Text, Computer_Fundamentals.Text);
         }
     }
 }

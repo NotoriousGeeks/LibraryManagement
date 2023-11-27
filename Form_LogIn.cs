@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -42,6 +43,8 @@ namespace LibrarySystem
             else
             {
                 logInErrorMessage_Label.Visible = true;
+                userName_Tb.Text = "";
+                password_Tb.Text = "";
             }
         }
 
@@ -62,6 +65,11 @@ namespace LibrarySystem
             password_Tb.UseSystemPasswordChar = !password_Tb.UseSystemPasswordChar;
             hidePassword_Pb.Visible = false;
             showPassword_Pb.Visible = true;
+        }
+
+        private void ClearOnClicked(object sender, EventArgs e)
+        {
+            logInErrorMessage_Label.Visible = false;
         }
     }
 }
