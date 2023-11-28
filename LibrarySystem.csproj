@@ -225,6 +225,12 @@
     <Compile Include="BooksDisplay.Designer.cs">
       <DependentUpon>BooksDisplay.cs</DependentUpon>
     </Compile>
+    <Compile Include="BorrowingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BorrowingForm.Designer.cs">
+      <DependentUpon>BorrowingForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_LogIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -248,6 +254,9 @@
     <Compile Include="RoundedPanel.cs" />
     <EmbeddedResource Include="BooksDisplay.resx">
       <DependentUpon>BooksDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BorrowingForm.resx">
+      <DependentUpon>BorrowingForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_LogIn.resx">
       <DependentUpon>Form_LogIn.cs</DependentUpon>
@@ -326,6 +335,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\The Worst Journey In The World.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Borrowing Book Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ugh.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Fody.4.0.2\build\Fody.targets" Condition="Exists('packages\Fody.4.0.2\build\Fody.targets')" />

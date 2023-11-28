@@ -73,6 +73,16 @@ namespace LibrarySystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Borrowing_Book_Background {
+            get {
+                object obj = ResourceManager.GetObject("Borrowing Book Background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Computer_Forensics {
             get {
                 object obj = ResourceManager.GetObject("Computer Forensics", resourceCulture);
@@ -206,6 +216,16 @@ namespace LibrarySystem.Properties {
         internal static System.Drawing.Bitmap The_Yellow_Wallpaper {
             get {
                 object obj = ResourceManager.GetObject("The Yellow Wallpaper", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ugh {
+            get {
+                object obj = ResourceManager.GetObject("ugh", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
