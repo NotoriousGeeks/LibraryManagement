@@ -63,6 +63,16 @@ namespace LibrarySystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Berenice {
+            get {
+                object obj = ResourceManager.GetObject("Berenice", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Computer_Forensics {
             get {
                 object obj = ResourceManager.GetObject("Computer Forensics", resourceCulture);
@@ -99,16 +109,47 @@ namespace LibrarySystem.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-
-        internal static System.Drawing.Bitmap Dracula
-        {
-            get
-            {
-                object obj = ResourceManager.GetObject("picture_Dracula", resourceCulture);
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Dracula {
+            get {
+                object obj = ResourceManager.GetObject("Dracula", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap In_A_Grove {
+            get {
+                object obj = ResourceManager.GetObject("In A Grove", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Memoir_Of_Queen_Adelaide {
+            get {
+                object obj = ResourceManager.GetObject("Memoir Of Queen Adelaide", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap My_Own_Affairs {
+            get {
+                object obj = ResourceManager.GetObject("My Own Affairs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
@@ -117,8 +158,56 @@ namespace LibrarySystem.Properties {
                 object obj = ResourceManager.GetObject("Python Unit Test Automation", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
-
-
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Royal_Girls_And_Royal_Courts {
+            get {
+                object obj = ResourceManager.GetObject("Royal Girls And Royal Courts", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap The_Demon_Spell {
+            get {
+                object obj = ResourceManager.GetObject("The Demon Spell", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap The_Golden_Bough {
+            get {
+                object obj = ResourceManager.GetObject("The Golden Bough", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap The_Worst_Journey_In_The_World {
+            get {
+                object obj = ResourceManager.GetObject("The Worst Journey In The World", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap The_Yellow_Wallpaper {
+            get {
+                object obj = ResourceManager.GetObject("The Yellow Wallpaper", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
         }
     }
 }
